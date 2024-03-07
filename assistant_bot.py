@@ -29,7 +29,7 @@ def parse_input(user_input):
 def add_contact(args, book):
     name, phone = args
     record = book.find(name)
-    if record != 'Contact not found':
+    if record != 'Contact not found.':
         record.add_phone(phone)
     else:
         record = Record(name)
